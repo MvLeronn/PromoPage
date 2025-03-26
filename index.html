@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guarda-Chuva Amarelo - How I Met Your Mother</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Container para múltiplos guarda-chuvas -->
+    <div id="guarda-chuvas-wrapper"></div>
+
+    <div class="content-container">
+      <!-- Seção de Informações sobre How I Met Your Mother -->
+      <section class="himym-section">
+        <div class="himym-header">
+          <h2>How I Met Your Mother</h2>
+          <div class="himym-tagline">"Uma história lendária de amizade, amor e o guarda-chuva amarelo"</div>
+        </div>
+        
+        <div class="himym-promo">
+          <div class="himym-poster">
+            <img src="assets/img/himym-poster.jpg" alt="How I Met Your Mother" />
+            <div class="watch-now">
+              <a href="https://www.disneyplus.com/pt-br/browse/entity-bc68ac79-3ace-4427-9ec0-5ee6f314d194" target="_blank" class="cta-button">Assistir Agora</a>
+            </div>
+          </div>
+          
+          <div class="himym-reasons">
+            <h3>Por que você vai amar esta série:</h3>
+            <ul>
+              <li><span>✓</span> 9 temporadas de histórias hilárias e emocionantes</li>
+              <li><span>✓</span> Personagens inesquecíveis que vão virar seus amigos</li>
+              <li><span>✓</span> Frases e piadas que você vai repetir para sempre</li>
+              <li><span>✓</span> O mistério do guarda-chuva amarelo que conecta tudo</li>
+              <li><span>✓</span> Uma das sitcoms mais amadas de todos os tempos</li>
+            </ul>
+            <div class="streaming-info">
+              Disponível no Disney+ e Star+
+            </div>
+          </div>
+        </div>
+        
+        <div class="himym-content">
+          <div class="himym-synopsis">
+            <h3>Sinopse</h3>
+            <p>
+              Em 2030, o arquiteto Ted Mosby conta aos seus filhos a história de como ele conheceu a mãe deles. 
+              A história retrocede para 2005, seguindo Ted em Nova York com seus amigos Marshall, Lily, Barney e Robin, 
+              em uma jornada cheia de humor, romance e momentos lendários no bar MacLaren's.
+            </p>
+          </div>
+          
+          <div class="himym-quotes">
+            <h3>Frases Lendárias</h3>
+            <ul>
+              <li>"Legen... espere... dário!" - Barney Stinson</li>
+              <li>"Nada de bom acontece depois das 2 da manhã." - Ted Mosby</li>
+              <li>"Você sabe o que é incrível? Em 2030, vamos todos estar comendo sanduíches." - Future Ted</li>
+              <li>"Desafio aceito!" - Barney Stinson</li>
+              <li>"O universo tem um plano, e o plano é bom." - Ted Mosby</li>
+            </ul>
+          </div>
+          
+          <div class="himym-fun-fact">
+            <h3>Curiosidade</h3>
+            <p>
+              O guarda-chuva amarelo é um símbolo importante na série, conectando Ted à mãe de seus filhos 
+              através de uma série de eventos coincidentes ao longo de várias temporadas.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Seção de perguntas DEPOIS -->
+      <section class="perguntas">
+        <h2>Envie sua pergunta e tire suas dúvidas</h2>
+        <form id="formPerguntas">
+          <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            required
+            aria-label="Digite seu nome"
+          />
+          <textarea
+            id="pergunta"
+            placeholder="Digite sua pergunta"
+            required
+            aria-label="Digite sua pergunta"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        
+        <!-- Controle para adicionar mais guarda-chuvas -->
+        <div class="controls">
+          <label for="numUmbrellas">Número de guarda-chuvas:</label>
+          <input type="number" id="numUmbrellas" min="1" max="20" value="5">
+          <button type="button" id="updateUmbrellas">Atualizar</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
